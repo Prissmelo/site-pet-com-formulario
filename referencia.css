@@ -19,9 +19,7 @@
 
 
 @media (max-width: 630px) {
-    nav {
-        display: none;
-    }
+  
 
     .menu-button-container {
         display: flex
@@ -35,20 +33,16 @@
         justify-content: center;
     }
 
-    #checkbox-menu {
-        position: absolute;
-        opacity: 0;
-    }
-
     .navbar {
-        position: absolute;
-        margin-top: 30px;
+        
+        position: fixed;
+        margin-top: 5px;
         flex-direction: column;
-        width: 100vw;
+        width: 50vw;
         justify-content: center;
         align-items: center;
         left: 100%;
-        transform: translateX(100vw);
+        transform: translateX(32vw);
         transition: 0.5s ease transform;
     }
 
@@ -58,24 +52,42 @@
         margin: 0;
         padding: 0px;
         width: 100%;
+        color: white;
+       
+        border-radius: 5px;
     }
 
-    .navbar>li:not(:last-child) {
-        border-bottom: 1px solid white;
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
     }
 
-    .navbar li a {
-        flex:1;
-        text-align: center;
-    }
+    /*Modifica o botão hamburgue*/
 
     label{
         cursor: pointer;
         position: relative;
         display: block;
-        height: 22px;
+        height: 50px;
         width: 30px;
+        text-align: center;
     }
+
+    /*logo do icon Beagle*/
+
+    .navbar .logo {
+       display: none;
+
+    }
+
+    /*logo da imagem Pet Friendly*/
+
+    .navbar .dog {
+        width: 40%;
+    }
+
+
+    /*Modifica o botão hamburgue desapacere*/
 
     label span{
         position: absolute;
@@ -110,16 +122,15 @@
         transform: rotate(45deg);
         top: 8px
     }
-    
-    nav.navbar{
-        width: 100%;
-    }
 
-    #checkbox-menu:checked~nav .navbar {
-        transform: translateX(-100vw);
-        transition: 0.5s ease transform;
+    nav.menu{
+        width: 100%;
     } 
 
+    #checkbox-menu:checked~nav .menu {
+        transform: translateX(-100vw); /*quem manda é esse cara, quando aparece ou não*/
+        transition: 0.5s ease transform;
+    } 
 
 
     .titulo {
@@ -176,16 +187,13 @@
         display:flex;
         line-height: 10px;
         margin-top: 0%;
-        
-        /*align-items:baseline;
-        justify-content: center;*/
 
     }
 
     /* label: nome completo, email e mensagem*/
 
     .formulario .row-flex label {
-       /* position: absolute;*/
+      
         height: 10%;
         display:flex;
         width: 0%;

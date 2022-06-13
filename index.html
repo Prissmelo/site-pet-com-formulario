@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="referencia.css">
@@ -18,36 +19,36 @@
             
             <header>
                  
-                   <div class="container-nav">
+                <div class="container-nav">
                         <div class="menu-section">
-                             <div class="constainer-menu">
+                            <div class="constainer-menu">
                                 <input type="checkbox" id="checkbox-menu" >
                                 <label  class="menu-button-container" for="checkbox-menu">
                                    <span></span>
                                    <span></span>
                                    <span></span>
                                 </label>
-                             </div>
-                        </div
-                   </div>
+                                <nav>
+                                    <ul class="navbar">
+                                        <img class="logo" src="./imagens/castanho.ico" alt="logo"> 
+                                        <li> <img class="dog" src="./imagens/logo.png" alt="logo"> </li> 
+                                        <div class="menu">
+                                            <li ><a href="#home">Home</a></li>
+                                            <li ><a href="#produto">Produtos</a></li>
+                                            <li ><a href="#empresa">Sobre Nós</a></li>
+                                            <li ><a href="#contato">Contato</a></li>
+                                        </div>
+                                    </ul>
+                                </nav>
 
-
-                    <nav>
-                        <ul class="navbar">
-                             <img class="logo" src="./imagens/castanho.ico" alt="logo"> 
-                            <li> <img src="./imagens/logo.png" alt="logo"> </li>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="prodtos.html">Produtos</a></li>
-                            <li><a href="sobrenos.html">Sobre Nós</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-            
-                        </ul>
-                    </nav>
+                            </div>
+                        </div>
+                </div>                    
             </header> 
 
             
 
-        <div class="presentation container">
+        <div class="presentation container" id="home">
             <div>
                 <h1>Pet<span></span></h1>
                 <h1>Friendly<span></span></h1>
@@ -67,7 +68,7 @@
            <div class="card">
                <img src="./imagens/gato.jpg">
                <div class="info">
-                   <h2>Para Gatos</h2>
+                   <h2>Tipo de Raça de Gatos</h2>
                    <p>
                        <a href="https://www.peritoanimal.com.br/racas-de-gatos.html"  class="btn">Conheça mais</a> 
                     </p>
@@ -78,8 +79,8 @@
            <div class="card">
                 <img src="./imagens/cachorro.jpg">
                 <div class="info">
-                    <h2>Para Cães</h2>
-                    <p> <a href="https://tudosobrecachorros.com.br/" type="text" class="btn">Conheça mais</a></p>
+                    <h2>Tipos de Raça de Cães</h2>
+                    <p> <a href="./artigos/futuro.html" type="text" class="btn">Conheça mais</a></p>
                 </div>
     
            </div>
@@ -87,7 +88,7 @@
 
 
 
-    <section id="portfolio">
+    <section id="portfolio" >
         <div class="portfolio container">
             <div class="portfolio header">
                 <h1 class="section-title"><span>Nossos Itens</span></h1>
@@ -95,7 +96,7 @@
             </div>
             
 
-            <div class="all-projects">
+            <div class="all-projects" id="produto">
                 <div class="project-item">
                     <div class="project-info">
                         <h3>Roupas diversas para o seu Pet</h3>
@@ -197,7 +198,7 @@
 
     </div>
 
-    <div class="container2">
+    <div class="container2" id="empresa">
         <p> 
                A Pet Friendly nasceu de uma pesquisa e verificamos que o mundo dos pets necessitava de uma atualiação, 
                que não eram mais tratados como um simples animal de estimação.  Com essa mudança da situação atual do mundo, 
@@ -225,7 +226,7 @@
     </div>
 
     
-    <div class="formulario" style="display:flex">
+    <div class="formulario" style="display:flex" id="contato">
             <form class="contato" action="contato.html" method="post">
                 <div class="titulo-form">
                     <h4>Fale com AU gente  📫 </h4>
